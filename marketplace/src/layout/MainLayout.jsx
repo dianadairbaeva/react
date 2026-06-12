@@ -3,11 +3,11 @@ import Header from "../components/Header/Header"
 
 export default function MainLayout(){
     return(
-        <div>
+        <div className="layout">
             <Header/>
-            <main className="main">
+            <main className="layout__main">
                 <Outlet/>
             </main>
         </div>
     )
-}
+} 

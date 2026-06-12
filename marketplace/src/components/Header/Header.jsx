@@ -16,6 +16,12 @@ export default function Header(){
             <nav className="nav">
                 <Link to="/">Home</Link>
                 <Link to="/products">Products</Link>
+                {token ? (<><Link to="/profile">Profile</Link>
+                 <button onClick={handleLogout}>Logout</button></>) : 
+                 (<>
+                 <Link to="/login">Login</Link>
+                 <Link to="/register">Register</Link>
+                 </>)}
             </nav>
 
        </header>
