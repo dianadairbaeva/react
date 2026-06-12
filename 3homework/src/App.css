@@ -1,0 +1,30 @@
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  background: #fff;
+}
+
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+
+li {
+  margin-bottom: 5px;
+}
