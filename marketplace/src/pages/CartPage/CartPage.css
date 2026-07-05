@@ -7,7 +7,7 @@
 .cart-page h1 {
   font-size: 38px;
   font-weight: 800;
-  color: #111827;
+  color: #d63384;
   margin: 0;
 }
 
@@ -17,9 +17,9 @@
   text-align: center;
   font-size: 20px;
   font-weight: 600;
-  color: #6b7280;
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
+  color: #c2185b;
+  background: #fff5fa;
+  border: 1px solid #ffd6e7;
   border-radius: 20px;
 }
 
@@ -35,8 +35,8 @@
   border: none;
   border-radius: 12px;
   padding: 12px 18px;
-  background: #ef4444;
-  color: #ffffff;
+  background: linear-gradient(135deg, #ff4da6, #ff85c1);
+  color: white;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
@@ -44,7 +44,8 @@
 }
 
 .clear-btn:hover {
-  background: #dc2626;
+  background: linear-gradient(135deg, #ff1493, #ff4da6);
+  box-shadow: 0 8px 18px rgba(255, 20, 147, 0.3);
 }
 
 .cart-list {
@@ -59,17 +60,17 @@
   align-items: center;
   gap: 20px;
   padding: 18px;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  background: white;
+  border: 1px solid #ffd6e7;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 24px rgba(255, 105, 180, 0.12);
 }
 
 .cart-item img {
   width: 100px;
   height: 100px;
   object-fit: contain;
-  background: #f8fafc;
+  background: #fff5fa;
   border-radius: 14px;
   padding: 10px;
 }
@@ -84,14 +85,14 @@
   margin: 0;
   font-size: 18px;
   font-weight: 700;
-  color: #111827;
+  color: #d63384;
 }
 
 .cart-info p {
   margin: 0;
   font-size: 16px;
   font-weight: 700;
-  color: #16a34a;
+  color: #ff1493;
 }
 
 .cart-quantity {
@@ -106,8 +107,8 @@
   height: 36px;
   border: none;
   border-radius: 10px;
-  background: #f3f4f6;
-  color: #111827;
+  background: #ffe4ef;
+  color: #d63384;
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
@@ -115,7 +116,8 @@
 }
 
 .cart-quantity button:hover {
-  background: #e5e7eb;
+  background: #ffb6d5;
+  color: white;
 }
 
 .cart-quantity span {
@@ -123,19 +125,19 @@
   text-align: center;
   font-size: 17px;
   font-weight: 700;
-  color: #111827;
+  color: #d63384;
 }
 
 .cart-item-total {
   margin: 0;
   font-size: 18px;
   font-weight: 800;
-  color: #111827;
+  color: #ff1493;
   text-align: center;
 }
 
 .cart-item-total::after {
-  content: " тг";
+  content: " $";
 }
 
 .cart-item > button:last-of-type,
@@ -150,12 +152,13 @@
 }
 
 .cart-item > button:nth-last-of-type(2) {
-  background: #f3f4f6;
-  color: #111827;
+  background: #ffe4ef;
+  color: #d63384;
 }
 
 .cart-item > button:nth-last-of-type(2):hover {
-  background: #e5e7eb;
+  background: #ffb6d5;
+  color: white;
 }
 
 .checkout-btn {
@@ -164,8 +167,8 @@
   height: 48px;
   border: none;
   border-radius: 14px;
-  background: #111827;
-  color: #ffffff;
+  background: linear-gradient(135deg, #ff4da6, #ff85c1);
+  color: white;
   font-size: 16px;
   font-weight: 800;
   cursor: pointer;
@@ -173,7 +176,8 @@
 }
 
 .checkout-btn:hover {
-  background: #16a34a;
+  background: linear-gradient(135deg, #ff1493, #ff4da6);
+  box-shadow: 0 10px 22px rgba(255, 20, 147, 0.3);
 }
 
 button:active {
@@ -237,7 +241,7 @@ button:active {
   .cart-quantity {
     width: 100%;
     justify-content: space-between;
-    background: #f9fafb;
+    background: #fff5fa;
     padding: 10px;
     border-radius: 14px;
   }

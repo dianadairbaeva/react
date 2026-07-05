@@ -1,8 +1,7 @@
-/* Общий фон страницы */
 .products-page {
     min-height: 100vh;
-    background: radial-gradient(circle at top, #0b1020, #05070f);
-    color: #e6e6ff;
+    background: radial-gradient(circle at top, #fff5fa, #ffe4ef);
+    color: #d63384;
     padding: 40px 20px;
     font-family: "Segoe UI", sans-serif;
 }
@@ -18,8 +17,8 @@
 .products-page__top h1 {
     font-size: 2.2rem;
     font-weight: 700;
-    color: #c7b8ff;
-    text-shadow: 0 0 15px rgba(140, 90, 255, 0.4);
+    color: #d63384;
+    text-shadow: 0 0 15px rgba(255, 105, 180, 0.25);
     letter-spacing: 1px;
 }
 
@@ -35,7 +34,7 @@
 .products-page h2 {
     text-align: center;
     font-size: 1.5rem;
-    color: #9aa4ff;
+    color: #c2185b;
     margin-top: 80px;
     animation: fadeIn 0.5s ease-in-out;
 }
@@ -60,7 +59,7 @@
     left: -200px;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(120, 80, 255, 0.2), transparent 60%);
+    background: radial-gradient(circle, rgba(255, 77, 166, 0.25), transparent 60%);
     filter: blur(80px);
     z-index: -1;
 }
@@ -72,7 +71,7 @@
     right: -200px;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(0, 180, 255, 0.15), transparent 60%);
+    background: radial-gradient(circle, rgba(255, 20, 147, 0.18), transparent 60%);
     filter: blur(100px);
     z-index: -1;
 }
