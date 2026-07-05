@@ -1,0 +1,147 @@
+/* 10. Что такое CSS-библиотека?
+
+CSS-библиотека — это готовый набор стилей и компонентов, 
+который помогает быстрее создавать красивые и адаптивные 
+сайты без написания большого количества CSS-кода. */
+
+/* 
+11. Чем Tailwind CSS отличается от Material UI?
+
+Tailwind CSS
+
+Это CSS-фреймворк с готовыми классами.
+Разработчик сам собирает интерфейс.
+Максимальная гибкость.
+Не содержит готовых React-компонентов.
+
+Material UI
+
+Это библиотека готовых React-компонентов.
+Основана на дизайне Material Design.
+Позволяет быстро создавать интерфейс.
+Меньше свободы в дизайне по сравнению с Tailwind. */
+
+/* 12. Для чего используют Ant Design?
+
+Ant Design используют для создания современных веб-приложений на React. 
+Он предоставляет большое количество готовых компонентов: кнопки, 
+таблицы, формы, меню, модальные окна и многое другое. */
+
+/* 13. Почему в нашем учебном курсе мы пока используем обычный CSS?
+
+Потому что нужно сначала понять архитектуру React проектов а потом понять что будет
+проще и выбирать самому. */
+
+/* Задание 2. Сравнительная таблица
+Свойство	        Tailwind CSS	Material UI	        Ant Design	        Chakra UI
+Тип	                CSS-фреймворк	React-компоненты	React-компоненты	React-компоненты
+Готовые компоненты	Нет	            Да	                Да	                Да
+Простота настройки	Высокая	        Средняя	            Средняя	            Высокая
+Подходит для React	Да	            Да	                Да	                Да
+Свобода дизайна	    Очень высокая	Средняя	            Средняя	            Высокая */
+
+/* Задание 3 */
+.product-detail{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:90vh;
+    background:#f5f7fa;
+    padding:40px;
+}
+
+.product-card{
+    display:flex;
+    gap:40px;
+    max-width:900px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.product-detail__image{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:15px;
+    background:#f3f3f3;
+}
+
+.product-detail__content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.category{
+    display:inline-block;
+    width:max-content;
+    background:#4f46e5;
+    color:white;
+    padding:6px 14px;
+    border-radius:20px;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+.product-detail__content h1{
+    margin-bottom:15px;
+    font-size:34px;
+}
+
+.description{
+    margin-bottom:25px;
+    line-height:1.7;
+    color:#555;
+}
+
+.price{
+    color:#16a34a;
+    font-size:34px;
+    margin-bottom:25px;
+}
+
+.product-detail__button{
+    width:230px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.product-detail__button:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+.loading{
+    text-align:center;
+    margin-top:150px;
+}
+
+/* 14. Для чего нужен Tailwind CSS?
+
+Tailwind CSS нужен для быстрой разработки интерфейсов. 
+Вместо написания собственного CSS используются готовые классы, 
+что ускоряет создание сайта.
+
+15. Как работает компонентная система Material UI?
+
+Material UI предоставляет готовые React-компоненты 
+Разработчик импортирует нужный компонент и использует его в проекте, 
+при необходимости изменяя его внешний вид.
+
+16. В каком проекте ты лучше используешь библиотеку?
+
+Для интернет-магазина я выбрала бы Material UI.
+Из-за
+большого количества готовых компонентов;
+удобных форм;
+красивых карточек товаров;
+хорошей адаптивности;
+высокой скорости разработки. */ 

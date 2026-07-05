@@ -1,0 +1,78 @@
+/* Общий фон страницы */
+.products-page {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #0b1020, #05070f);
+    color: #e6e6ff;
+    padding: 40px 20px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Верхняя часть */
+.products-page__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.products-page__top h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #c7b8ff;
+    text-shadow: 0 0 15px rgba(140, 90, 255, 0.4);
+    letter-spacing: 1px;
+}
+
+/* Сетка товаров */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+/* Состояния (loading / error) */
+.products-page h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #9aa4ff;
+    margin-top: 80px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Глобальный glow эффект для страницы */
+.products-page::before {
+    content: "";
+    position: fixed;
+    top: -200px;
+    left: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(120, 80, 255, 0.2), transparent 60%);
+    filter: blur(80px);
+    z-index: -1;
+}
+
+.products-page::after {
+    content: "";
+    position: fixed;
+    bottom: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0, 180, 255, 0.15), transparent 60%);
+    filter: blur(100px);
+    z-index: -1;
+}
